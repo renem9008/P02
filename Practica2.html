@@ -6,25 +6,20 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Pr&aacute;ctica 2</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-09-13"><meta name="DC.source" content="Practica2.m"><style type="text/css">
+      --><title>Pr&aacute;ctica 2</title><meta name="generator" content="MATLAB 8.6"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-09-13"><meta name="DC.source" content="pr.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
-
 html { min-height:100%; margin-bottom:1px; }
 html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
 html body td { vertical-align:top; text-align:left; }
-
 h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
 h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
 h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
-
 a { color:#005fce; text-decoration:none; }
 a:hover { color:#005fce; text-decoration:underline; }
 a:visited { color:#004aa0; text-decoration:none; }
-
 p { padding:0px; margin:0px 0px 20px; }
 img { padding:0px; margin:0px 0px 20px; border:none; }
 p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
-
 ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
 ul li { padding:0px; margin:0px 0px 7px 0px; }
 ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
@@ -35,38 +30,132 @@ ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
 ol li ol li { list-style-type:lower-alpha; }
 ol li ul { padding-top:7px; }
 ol li ul li { list-style:square; }
-
 .content { font-size:1.2em; line-height:140%; padding: 20px; }
-
 pre, code { font-size:12px; }
 tt { font-size: 1.2em; }
 pre { margin:0px 0px 20px; }
 pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
 pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
 pre.error { color:red; }
-
 @media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
-
 span.keyword { color:#0000FF }
 span.comment { color:#228B22 }
 span.string { color:#A020F0 }
 span.untermstring { color:#B20000 }
 span.syscmd { color:#B28C00 }
-
 .footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
 .footer p { margin:0px; }
 .footer a { color:#878787; }
 .footer a:hover { color:#878787; text-decoration:underline; }
 .footer a:visited { color:#878787; }
-
 table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
 table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
-
-
-
-
-
-  </style></head><body><div class="content"><h1>Pr&aacute;ctica 2</h1><!--introduction--><p>Integrantes del equipo</p><div><ul><li>Alarcon Camacho Aldo yosef</li><li>Islas Martinez Ceasar</li><li>Monroy Reza Rene</li><li>Ochoa Velasquez Jos&eacute; Abraham</li></ul></div><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#2">Introduci&oacute;n</a></li><li><a href="#3">Desarrollo</a></li><li><a href="#4">Problema 1</a></li><li><a href="#5">Problema 2</a></li><li><a href="#6">Problema 3 (No se Hace)</a></li><li><a href="#7">Problema 4</a></li><li><a href="#8">Problema 5</a></li><li><a href="#9">Problema 6</a></li><li><a href="#10">Problema 7</a></li><li><a href="#11">Ap&eacute;ndice</a></li><li><a href="#12">Referencias</a></li></ul></div><h2 id="1">Objetivos</h2><div><ul><li>Manipulaci&oacute;n B&aacute;sica de MATLAB%</li><li>Gr&aacute;ficas de se&ntilde;ales reales y complejas continuas</li><li>Transformaci&oacute;n de se&ntilde;ales contuinuas (escalamientos y traslaciones)</li><li>C&aacute;lculo de energ&iacute;a y potencia de se&ntilde;ales continuas</li></ul></div><h2 id="2">Introduci&oacute;n</h2><p><b>Breve Historia de MATLAB</b></p><p>Hoy en d&iacute;a MATLAB se trata de un entorno inform&aacute;tico t&eacute;cnico completo, pero el desarrollo de esta herramienta inici&oacute; como un simple "Laboratorio de Matrices". J. H. Wilkinson, George Forsythe, and John Todd, fueron personas que jugaron un rol importante en los origenes de MATLAB hace mas de 50 a&ntilde;os.</p><p>Wilkinson fue un matem&aacute;tico brit&aacute;nico que pas&oacute; su carrera entera en el Laboratorio Nacional de F&iacute;sica (NPL). Trabajando con una versi&oacute;n simplificada de un dise&ntilde;o sofisticado de Alan Turing, Wilkinson y sus colegas en el NPL construyeron la "Pilot Automatic Computing Engine (ACE)", una de las primeras computadoras digitales de programa almacenado de Gran Breta&ntilde;a. El Pilot ACE corri&oacute; su primer programa en Mayo de 1950. Wilkinson hizo c&aacute;lculos matriciales y pas&oacute; a convertirse en la autoridad principal del mundo en el &aacute;lgebra lineal num&eacute;rica.</p><p>Aproximadamente al mismo tiempo, matem&aacute;ticos en el Instituto para el An&aacute;lisis Num&eacute;rico (INA), una rama de National Bureau of Standards, estaban trabajando con la Standards Western Automatic Computer (SWAC), una de las primeras computadoras de USA. Investigadores en INA incluidos George Forsythe, John Todd, y Olga Taussky-Todd.</p><p>En 1967 Forsythe and Cleve Moler publicaron un libor sobre c&aacute;lculo matricial que contenia contenido de trabajo con software: programas en Algol, Fortran y PL/I para sistemas de soluci&oacute;n de ecuaciones linealis simultaneas.</p><p>En la dec&aacute;da de 1970 Investigadores en Argonne tradujeron el c&oacute;digo en Algol para el c&aacute;lculo del valor propio de una matriz del manual de Wilkinson y Reinsch en Fortran para producir EISPACK. Este fue segudi po LINPACK, un paquete de programas de Fortran para soluconar ecuaciones lineales.</p><p>El primer Fortran MATLAB era portable y pod&iacute;a ser compilado en muchas de las computadoras que estaban disponibles en los finales de 1970 y principios de 1980.</p><p>En la decada de 1980 Cleve Moler con algunos de sus etudiantes de ingenier&iacute;a unieron dos empresas de consultor&iacute;a. Estas empresas extendieron MATLAB para tener mas capacidad en el an&aacute;lisis de control y procesamiento de se&ntilde;ales,y en principios de la dec&aacute;da de 1980, ofrecieron el software resultante como productos comerciales.</p><p>Jack Little, un ingeniero de control capacitado en Standford y MIT, fue el principal desarrollador de uno de los primeros productos comerciales basado en Forran MATLAB. Cuando IMB anunci&oacute; su pirmer PC en Agosto de 1981, Jack anticip&oacute; la posibilidad de usar MATLAB y la PC para c&aacute;lculos t&eacute;cnicos. &Eacute;l y su colega Steve Bangert reprogramaron MATLAB en C y a&ntilde;adieron archivos M,toolboxes, y gr&aacute;ficos m&aacute;s potentes.</p><p>Jack Little, Steve Bangert y Cleve Moler fundaron The MathWorks en California en 1984.</p><p><b>Alternativas de Software Libre</b></p><p>es una herramienta propietaria. Sin acceso a su c&oacute;digo fuente, tiene una comprensi&oacute;n limitada de c&oacute;mo funciona y c&oacute;mo puede modificarlo. Tambi&eacute;n es prohibitivamente costoso para muchas personas fuera de un entorno acad&eacute;mico, donde las tarifasde licencia para una sola copia pueden alcanzar los miles de d&oacute;lares.</p><p>Afortunadamente existen alternativas de c&oacute;digo abierto. Aqu&iacute; hay algnas de ellas:</p><p><b>GNU Octave</b></p><p>GNU Octave puede ser la alternativa m&aacute;s conocida a MATLAB. En desarrollo activo durante casi tres d&eacute;cadas, Octave se ejecuta en Windows, Mac y Linux, y est&aacute; empaquetado para la mayor&iacute;a de las distribuciones principales. Si est&aacute; buscando un proyecto que sea lo m&aacute;s parecido posible al lenguaje MATLAB real, Octave puede ser una buena opci&oacute;n para usted; se esfuerza por una compatibilidad exacta, por lo que muchos de sus proyectos desarrollados para MATLAB pueden ejecutarse en Octave sin necesidad de modificaciones.</p><p>Para m&aacute;s informaci&oacute;n puedes visitar el sitio: <a href="https://www.gnu.org/software/octave/">GNU Octave</a></p><p><b>Scilab</b></p><p>Scilab es otra opci&oacute;n de c&oacute;digo abierto para computaci&oacute;n num&eacute;rica que se ejecuta en todas las plataformas principales: Windows, Mac y Linux incluidos. Scilab es quiz&aacute;s la alternativa m&aacute;s conocida fuera de Octave, y (como Octave) es muy similar a MATLAB en su implementaci&oacute;n, aunque la compatibilidad exacta no es un objetivo de los desarrolladores del proyecto.</p><p>Para m&aacute;s informaci&oacute;n puedes visitar el sitio: <a href="https://www.scilab.org//">Scilab</a></p><p><b>Sage</b></p><p>SageMath es otro sistema de software de matem&aacute;ticas de c&oacute;digo abierto que podr&iacute;a ser una buena opci&oacute;n para aquellos que buscan una alternativa de MATLAB. Est&aacute; construido sobre una variedad de conocidas bibliotecas de computaci&oacute;n cient&iacute;fica basadas en Python, y su propio lenguaje es sint&aacute;cticamente similar a Python. Tiene muchas caracter&iacute;sticas que incluyen una interfaz de l&iacute;nea de comandos, cuadernos basados en navegador, herramientas para incrustar f&oacute;rmulas en otros documentos y, por supuesto, muchas bibliotecas matem&aacute;ticas.</p><p>Para m&aacute;s informaci&oacute;n puedes visitar el sitio: <a href="http://www.sagemath.org/index.html">Sage</a></p><h2 id="3">Desarrollo</h2><h2 id="4">Problema 1</h2><p>C&oacute;digo %</p><h2 id="5">Problema 2</h2><h2 id="6">Problema 3 (No se Hace)</h2><h2 id="7">Problema 4</h2><h2 id="8">Problema 5</h2><h2 id="9">Problema 6</h2><h2 id="10">Problema 7</h2><p>% function Px=Potencia(T,fun,a,b) syms t; % b=escalamiento horizontal; % a=escalamiento vertical; % T=Periodo de la Funci&oacute;n original T1=T/b; f=@(t) (fun(b.*t)).^2; P=@(T0,f) (a^2)*(1/T0)*integral(f,-T0/2,T0/2); Px=P(T1,f); end</p><h2 id="11">Ap&eacute;ndice</h2><h2 id="12">Referencias</h2><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+  </style></head><body><div class="content"><h1>Pr&aacute;ctica 2</h1><!--introduction--><p>Integrantes del equipo</p><div><ul><li>Alarcon Camacho Aldo yosef</li><li>Islas Martinez Ceasar</li><li>Monroy Reza Rene</li><li>Ochoa Velasquez Jos&eacute; Abraham</li></ul></div><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#2">Introduci&oacute;n</a></li><li><a href="#3">Desarrollo</a></li><li><a href="#4">Problema 4</a></li><li><a href="#5">M1.2</a></li><li><a href="#6">M1.3</a></li><li><a href="#7">M1.4</a></li><li><a href="#8">Problema 5 (1.2.2)</a></li><li><a href="#9">Problema 1.2.2(a)</a></li><li><a href="#10">Problema 1.2.2(b)</a></li><li><a href="#11">Problema 1.2.2(c)</a></li><li><a href="#12">Problema 1.2.2(d)</a></li><li><a href="#13">Problema 1.2.2(e)</a></li><li><a href="#14">Problema 7</a></li><li><a href="#15">Referencias</a></li></ul></div><h2>Objetivos<a name="1"></a></h2><div><ul><li>Manipulaci&oacute;n B&aacute;sica de MATLAB%</li><li>Gr&aacute;ficas de se&ntilde;ales reales y complejas continuas</li><li>Transformaci&oacute;n de se&ntilde;ales contuinuas (escalamientos y traslaciones)</li><li>C&aacute;lculo de energ&iacute;a y potencia de se&ntilde;ales continuas</li></ul></div><h2>Introduci&oacute;n<a name="2"></a></h2><p><b>Breve Historia de MATLAB</b></p><p>Hoy en d&iacute;a MATLAB se trata de un entorno inform&aacute;tico t&eacute;cnico completo, pero el desarrollo de esta herramienta inici&oacute; como un simple "Laboratorio de Matrices". J. H. Wilkinson, George Forsythe, and John Todd, fueron personas que jugaron un rol importante en los origenes de MATLAB hace mas de 50 a&ntilde;os.</p><p>Wilkinson fue un matem&aacute;tico brit&aacute;nico que pas&oacute; su carrera entera en el Laboratorio Nacional de F&iacute;sica (NPL). Trabajando con una versi&oacute;n simplificada de un dise&ntilde;o sofisticado de Alan Turing, Wilkinson y sus colegas en el NPL construyeron la "Pilot Automatic Computing Engine (ACE)", una de las primeras computadoras digitales de programa almacenado de Gran Breta&ntilde;a. El Pilot ACE corri&oacute; su primer programa en Mayo de 1950. Wilkinson hizo c&aacute;lculos matriciales y pas&oacute; a convertirse en la autoridad principal del mundo en el &aacute;lgebra lineal num&eacute;rica.</p><p>Aproximadamente al mismo tiempo, matem&aacute;ticos en el Instituto para el An&aacute;lisis Num&eacute;rico (INA), una rama de National Bureau of Standards, estaban trabajando con la Standards Western Automatic Computer (SWAC), una de las primeras computadoras de USA. Investigadores en INA incluidos George Forsythe, John Todd, y Olga Taussky-Todd.</p><p>En 1967 Forsythe and Cleve Moler publicaron un libor sobre c&aacute;lculo matricial que contenia contenido de trabajo con software: programas en Algol, Fortran y PL/I para sistemas de soluci&oacute;n de ecuaciones linealis simultaneas.</p><p>En la dec&aacute;da de 1970 Investigadores en Argonne tradujeron el c&oacute;digo en Algol para el c&aacute;lculo del valor propio de una matriz del manual de Wilkinson y Reinsch en Fortran para producir EISPACK. Este fue segudi po LINPACK, un paquete de programas de Fortran para soluconar ecuaciones lineales.</p><p>El primer Fortran MATLAB era portable y pod&iacute;a ser compilado en muchas de las computadoras que estaban disponibles en los finales de 1970 y principios de 1980.</p><p>En la decada de 1980 Cleve Moler con algunos de sus etudiantes de ingenier&iacute;a unieron dos empresas de consultor&iacute;a. Estas empresas extendieron MATLAB para tener mas capacidad en el an&aacute;lisis de control y procesamiento de se&ntilde;ales,y en principios de la dec&aacute;da de 1980, ofrecieron el software resultante como productos comerciales.</p><p>Jack Little, un ingeniero de control capacitado en Standford y MIT, fue el principal desarrollador de uno de los primeros productos comerciales basado en Forran MATLAB. Cuando IMB anunci&oacute; su pirmer PC en Agosto de 1981, Jack anticip&oacute; la posibilidad de usar MATLAB y la PC para c&aacute;lculos t&eacute;cnicos. &Eacute;l y su colega Steve Bangert reprogramaron MATLAB en C y a&ntilde;adieron archivos M,toolboxes, y gr&aacute;ficos m&aacute;s potentes.</p><p>Jack Little, Steve Bangert y Cleve Moler fundaron The MathWorks en California en 1984.</p><p><b>Alternativas de Software Libre</b></p><p>es una herramienta propietaria. Sin acceso a su c&oacute;digo fuente, tiene una comprensi&oacute;n limitada de c&oacute;mo funciona y c&oacute;mo puede modificarlo. Tambi&eacute;n es prohibitivamente costoso para muchas personas fuera de un entorno acad&eacute;mico, donde las tarifasde licencia para una sola copia pueden alcanzar los miles de d&oacute;lares.</p><p>Afortunadamente existen alternativas de c&oacute;digo abierto. Aqu&iacute; hay algnas de ellas:</p><p><b>GNU Octave</b></p><p>GNU Octave puede ser la alternativa m&aacute;s conocida a MATLAB. En desarrollo activo durante casi tres d&eacute;cadas, Octave se ejecuta en Windows, Mac y Linux, y est&aacute; empaquetado para la mayor&iacute;a de las distribuciones principales. Si est&aacute; buscando un proyecto que sea lo m&aacute;s parecido posible al lenguaje MATLAB real, Octave puede ser una buena opci&oacute;n para usted; se esfuerza por una compatibilidad exacta, por lo que muchos de sus proyectos desarrollados para MATLAB pueden ejecutarse en Octave sin necesidad de modificaciones.</p><p>Para m&aacute;s informaci&oacute;n puedes visitar el sitio: <a href="https://www.gnu.org/software/octave/">GNU Octave</a></p><p><b>Scilab</b></p><p>Scilab es otra opci&oacute;n de c&oacute;digo abierto para computaci&oacute;n num&eacute;rica que se ejecuta en todas las plataformas principales: Windows, Mac y Linux incluidos. Scilab es quiz&aacute;s la alternativa m&aacute;s conocida fuera de Octave, y (como Octave) es muy similar a MATLAB en su implementaci&oacute;n, aunque la compatibilidad exacta no es un objetivo de los desarrolladores del proyecto.</p><p>Para m&aacute;s informaci&oacute;n puedes visitar el sitio: <a href="https://www.scilab.org//">Scilab</a></p><p><b>Sage</b></p><p>SageMath es otro sistema de software de matem&aacute;ticas de c&oacute;digo abierto que podr&iacute;a ser una buena opci&oacute;n para aquellos que buscan una alternativa de MATLAB. Est&aacute; construido sobre una variedad de conocidas bibliotecas de computaci&oacute;n cient&iacute;fica basadas en Python, y su propio lenguaje es sint&aacute;cticamente similar a Python. Tiene muchas caracter&iacute;sticas que incluyen una interfaz de l&iacute;nea de comandos, cuadernos basados en navegador, herramientas para incrustar f&oacute;rmulas en otros documentos y, por supuesto, muchas bibliotecas matem&aacute;ticas.</p><p>Para m&aacute;s informaci&oacute;n puedes visitar el sitio: <a href="http://www.sagemath.org/index.html">Sage</a></p><h2>Desarrollo<a name="3"></a></h2><pre class="codeinput"><span class="comment">%Problema 1</span>
+<span class="comment">%Realizando funcion fun1</span>
+fun1=@(a,w) a.^2./(a.^2+w.^2);
+<span class="comment">%Definiendo valores para a y W</span>
+a=1;
+w=[-2:.02:2];
+<span class="comment">%%Problema 2</span>
+<span class="comment">%%Haciendo funcion que grafica funciones</span>
+grafico2(w,fun1(a,w))
+</pre><img vspace="5" hspace="5" src="pr_01.png" alt=""> <h2>Problema 4<a name="4"></a></h2><pre class="codeinput"><span class="comment">%M1.1</span>
+t=[-2:2];
+f=@(x) exp(-x).*cos(2*pi*x);
+grafico(t,f(t))
+t = (-2:0.01:2);
+grafico(t,f(t))
+</pre><img vspace="5" hspace="5" src="pr_02.png" alt=""> <img vspace="5" hspace="5" src="pr_03.png" alt=""> <h2>M1.2<a name="5"></a></h2><pre class="codeinput">t=[-2:2];
+u = @(t)(t&gt;=0);
+grafico(t,u(t));
+t = (-2:0.01:2);
+grafico(t,u(t));
+p = @(t) (t&gt;=0)&amp;(t&lt;1);
+t = (-1:0.01:2);
+grafico(t,p(t));
+</pre><img vspace="5" hspace="5" src="pr_04.png" alt=""> <img vspace="5" hspace="5" src="pr_05.png" alt=""> <img vspace="5" hspace="5" src="pr_06.png" alt=""> <h2>M1.3<a name="6"></a></h2><pre class="codeinput">g = @(t) exp(-t).*cos(2*pi*t).*(t&gt;=0);
+t=[-2:.01:2];
+grafico(t,g(2.*t+1));
+grafico(t,g(-t+1));
+grafico(t,g(2*t+1) +g(-t+1));
+</pre><img vspace="5" hspace="5" src="pr_07.png" alt=""> <img vspace="5" hspace="5" src="pr_08.png" alt=""> <img vspace="5" hspace="5" src="pr_09.png" alt=""> <h2>M1.4<a name="7"></a></h2><pre class="codeinput"> x = @(t)exp(-t).*((t&gt;=0)&amp;(t&lt;1));
+ t = [0:0.01:1];
+ E_x =sum(x(t).*x(t)*0.01)
+ x_squared = @(t)exp(-2*t).*((t&gt;=0)&amp;(t&gt;1));
+ E_x = quad(x_squared,0,1)
+ t = [0:0.001:100];
+ g_squared = @(t) exp(-2*t).*(cos(2*pi*t).^2).*(t&gt;=0)
+ E_g=sum(g_squared(t)*0.001)
+ E_g =quad(g_squared, 0,100)
+</pre><pre class="codeoutput">
+E_x =
+    0.4367
+E_x =
+     0
+g_squared = 
+    @(t)exp(-2*t).*(cos(2*pi*t).^2).*(t&gt;=0)
+E_g =
+    0.2567
+E_g =
+    0.2562
+</pre><h2>Problema 5 (1.2.2)<a name="8"></a></h2><pre class="codeinput">h=@(t) -t.*((t&gt;=-4)&amp;(t&lt;0));
+h1=@(t)(t).*(t&gt;=0);
+p=@(t) h1(t)+h(t);
+t1=[-4:2];
+grafico(t1,p(t1));
+</pre><img vspace="5" hspace="5" src="pr_10.png" alt=""> <h2>Problema 1.2.2(a)<a name="9"></a></h2><pre class="codeinput">grafico(t1+4,p(t1))
+</pre><img vspace="5" hspace="5" src="pr_11.png" alt=""> <h2>Problema 1.2.2(b)<a name="10"></a></h2><pre class="codeinput"> grafico(t1.*(1.5),p(t1))
+</pre><img vspace="5" hspace="5" src="pr_12.png" alt=""> <h2>Problema 1.2.2(c)<a name="11"></a></h2><pre class="codeinput">grafico(-t1,p(t1))
+</pre><img vspace="5" hspace="5" src="pr_13.png" alt=""> <h2>Problema 1.2.2(d)<a name="12"></a></h2><pre class="codeinput">  grafico((t1./2)+4,p(t1))
+</pre><img vspace="5" hspace="5" src="pr_14.png" alt=""> <h2>Problema 1.2.2(e)<a name="13"></a></h2><pre class="codeinput"> grafico((-t1)+2,p(t1))
+</pre><img vspace="5" hspace="5" src="pr_15.png" alt=""> <h2>Problema 7<a name="14"></a></h2><p>Crear una funci&oacute;n que calcule la potencia de una se&ntilde;al</p><pre class="language-matlab">
+<span class="keyword">function</span> Px=Potencia(T,fun,a,b)
+syms <span class="string">t</span>;
+<span class="comment">% fun=funci&oacute;n sin escalamientos;</span>
+<span class="comment">% b=escalamiento horizontal;</span>
+<span class="comment">% a=escalamiento vertical;</span>
+<span class="comment">% T=Periodo de la Funci&oacute;n original </span>
+T1=T/b;
+f=@(t) (fun(b.*t)).^2;
+P=@(T0,f) (a^2)*(1/T0)*integral(f,-T0/2,T0/2);
+Px=P(T1,f);
+<span class="keyword">end</span>
+</pre><p><b>Ejemplo 1.1.4</b></p><p>Find the power of the periodic signal <img src="pr_eq14833433867325483769.png" alt="$x(t)$"> shown in Fig P1.1-4. Find also the rms values of:</p><div><ul><li><img src="pr_eq08553293075075591414.png" alt="$-x(t)$"></li><li><img src="pr_eq04977266837248039624.png" alt="$2x(x)$"></li><li><img src="pr_eq11228850628849404961.png" alt="$cx(t)$"></li></ul></div><pre class="codeinput">t1=-5:0.1:5;
+f=t1.^3.*(t1&gt;=-2 &amp; t1&lt;=2);
+plot(t1,f,<span class="string">'LineWidth'</span>,2,<span class="string">'Color'</span>,[0 0 0]);
+title(<span class="string">'Fig. P1.1-4'</span>);
+<span class="comment">%</span>
+f=@(t) t.^3;
+syms <span class="string">c</span>;
+Px=Potencia(4,f,1,1)
+Px1=Potencia(4,f,-1,1)
+Px2=Potencia(4,f,2,1)
+Px3=Potencia(4,f,c,1)
+rms1=sqrt(Px1)
+rms2=sqrt(Px2)
+rms3=sqrt(Px3)
+</pre><pre class="codeoutput">
+Px =
+    9.1429
+Px1 =
+    9.1429
+Px2 =
+   36.5714
+ 
+Px3 =
+ 
+(64*c^2)/7
+ 
+rms1 =
+    3.0237
+rms2 =
+    6.0474
+ 
+rms3 =
+ 
+((64*c^2)/7)^(1/2)
+ 
+</pre><img vspace="5" hspace="5" src="pr_16.png" alt=""> <h2>Referencias<a name="15"></a></h2><div><ul><li>Cleve Moler. (2004). The Origins of MATLAB. 2019, de MathWorks Sitio web: https://www.mathworks.com/company/newsletters/articles/the-origins-of-matlab.html</li><li>maslinux. (2017). 3 Alternativas de C&oacute;digo abierto a MATLAB. 2019, de maslinux Sitio web: https://maslinux.es/3-alternativas-de-codigo-abierto-a-matlab/</li><li>B. P. Lathi, Linear systems and signals,Oxford University Press , 2005. Convolucion,procesamiento de se~nales.Recuperado el 6 de septiembre del 2019.https://ramaucsa.wordpress.com/2013/12/17/convolucion-procesamiento-de-senales/</li></ul></div><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Práctica 2
 % Integrantes del equipo
@@ -170,25 +259,99 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 %
 %
 %% Desarrollo
-%% Problema 1
-% Código %
-%% Problema 2
-%% Problema 3 (No se Hace)
+%Problema 1
+%Realizando funcion fun1
+fun1=@(a,w) a.^2./(a.^2+w.^2);
+%Definiendo valores para a y W
+a=1;
+w=[-2:.02:2]; 
+%%Problema 2
+%%Haciendo funcion que grafica funciones
+grafico2(w,fun1(a,w))
 %% Problema 4
-%% Problema 5
-%% Problema 6
+%M1.1
+t=[-2:2];
+f=@(x) exp(-x).*cos(2*pi*x);
+grafico(t,f(t))
+t = (-2:0.01:2);
+grafico(t,f(t))
+%% M1.2
+t=[-2:2];
+u = @(t)(t>=0);
+grafico(t,u(t));
+t = (-2:0.01:2);
+grafico(t,u(t));
+p = @(t) (t>=0)&(t<1);
+t = (-1:0.01:2); 
+grafico(t,p(t));
+%% M1.3
+g = @(t) exp(-t).*cos(2*pi*t).*(t>=0);
+t=[-2:.01:2];
+grafico(t,g(2.*t+1));
+grafico(t,g(-t+1));
+grafico(t,g(2*t+1) +g(-t+1));
+%% M1.4 
+ x = @(t)exp(-t).*((t>=0)&(t<1));
+ t = [0:0.01:1];
+ E_x =sum(x(t).*x(t)*0.01)
+ x_squared = @(t)exp(-2*t).*((t>=0)&(t>1));
+ E_x = quad(x_squared,0,1)
+ t = [0:0.001:100];
+ g_squared = @(t) exp(-2*t).*(cos(2*pi*t).^2).*(t>=0)
+ E_g=sum(g_squared(t)*0.001)
+ E_g =quad(g_squared, 0,100)
+%% Problema 5 (1.2.2)
+h=@(t) -t.*((t>=-4)&(t<0));
+h1=@(t)(t).*(t>=0);
+p=@(t) h1(t)+h(t);
+t1=[-4:2];
+grafico(t1,p(t1));
+%% Problema 1.2.2(a)
+grafico(t1+4,p(t1))
+%% Problema 1.2.2(b)
+ grafico(t1.*(1.5),p(t1))
+ %% Problema 1.2.2(c)
+grafico(-t1,p(t1))
+ %% Problema 1.2.2(d)
+  grafico((t1./2)+4,p(t1))
+ %% Problema 1.2.2(e)
+ grafico((-t1)+2,p(t1))
+ 
 %% Problema 7
-% % function Px=Potencia(T,fun,a,b)
-% syms t;
-% % b=escalamiento horizontal;
-% % a=escalamiento vertical;
-% % T=Periodo de la Función original 
-% T1=T/b;
-% f=@(t) (fun(b.*t)).^2;
-% P=@(T0,f) (a^2)*(1/T0)*integral(f,-T0/2,T0/2);
-% Px=P(T1,f);
-% end
-%% Apéndice
+% Crear una función que calcule la potencia de una señal
+% 
+% <include>Potencia.m</include>
+% 
+% *Ejemplo 1.1.4*
+%  
+% Find the power of the periodic signal $x(t)$ shown in Fig P1.1-4. Find also
+% the rms values of:
+% 
+% * $-x(t)$
+% * $2x(x)$
+% * $cx(t)$
+% 
+t1=-5:0.1:5;
+f=t1.^3.*(t1>=-2 & t1<=2);
+plot(t1,f,'LineWidth',2,'Color',[0 0 0]);
+title('Fig. P1.1-4');
+% 
+f=@(t) t.^3;
+syms c;
+Px=Potencia(4,f,1,1)
+Px1=Potencia(4,f,-1,1)
+Px2=Potencia(4,f,2,1)
+Px3=Potencia(4,f,c,1)
+rms1=sqrt(Px1)
+rms2=sqrt(Px2)
+rms3=sqrt(Px3)
 %% Referencias
+%%
+%  
+% 
+% * Cleve Moler. (2004). The Origins of MATLAB. 2019, de MathWorks Sitio web: https://www.mathworks.com/company/newsletters/articles/the-origins-of-matlab.html
+% * maslinux. (2017). 3 Alternativas de Código abierto a MATLAB. 2019, de maslinux Sitio web: https://maslinux.es/3-alternativas-de-codigo-abierto-a-matlab/
+% * B. P. Lathi, Linear systems and signals,Oxford University Press , 2005. Convolucion,procesamiento de se~nales.Recuperado el 6 de septiembre del 2019.https://ramaucsa.wordpress.com/2013/12/17/convolucion-procesamiento-de-senales/
+% 
 ##### SOURCE END #####
 --></body></html>
